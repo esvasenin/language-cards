@@ -47,13 +47,21 @@ python manage.py runserver
 📁 Структура проекта
 
 language_cards/
+
 ├── cards/                 # Приложение с карточками
+
 │   ├── models.py          # Модель WordCard
+
 │   ├── forms.py           # Форма добавления карточек
+
 │   ├── views.py           # Представления
+
 │   └── templates/cards/   # HTML-шаблоны
+
 ├── language_cards/        # Конфигурация проекта
+
 ├── media/                 # Загруженные изображения
+
 └── manage.py              # Точка входа
 
 💡 Пример использования
