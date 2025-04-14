@@ -17,21 +17,31 @@ Language Cards — это простой обучающий веб-сервис 
 🛠️ Установка и запуск
 
 # 1. Клонируем проект
+
 git clone https://github.com/esvasenin/language-cards.git
+
 cd language-cards
 
 # 2. Создаём и активируем виртуальное окружение
+
 python -m venv venv
+
 source venv/bin/activate   # (Linux/macOS)
+
 venv\Scripts\activate      # (Windows)
 
 # 3. Устанавливаем зависимости
+
 pip install django pillow
 
 # 4. Применяем миграции и запускаем сервер
+
 python manage.py makemigrations
+
 python manage.py migrate
+
 python manage.py runserver
+
 Открой в браузере: http://127.0.0.1:8000/
 
 📁 Структура проекта
@@ -47,6 +57,7 @@ language_cards/
 └── manage.py              # Точка входа
 
 💡 Пример использования
+
 Перейди на главную страницу
 
 Нажми «Добавить карточку», укажи слово, перевод и (опционально) картинку
