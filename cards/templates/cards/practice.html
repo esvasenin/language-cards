@@ -1,0 +1,19 @@
+{% extends 'cards/base.html' %}
+{% block content %}
+<h2>Практика</h2>
+{% if card %}
+    <div class="card p-3">
+        <h3>Слово: {{ card.word }}</h3>
+        <details>
+            <summary>Показать перевод</summary>
+            <p>{{ card.translation }}</p>
+        </details>
+        {% if card.image %}
+            <img src="{{ card.image.url }}" width="200">
+        {% endif %}
+    </div>
+    <a href="/practice/" class="btn btn-primary mt-3">Следующая</a>
+{% else %}
+    <p>Карточек пока нет.</p>
+{% endif %}
+{% endblock %}

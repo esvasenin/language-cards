@@ -1,0 +1,16 @@
+{% extends 'cards/base.html' %}
+{% block content %}
+<h2>Все карточки</h2>
+<table class="table table-bordered">
+    <thead><tr><th>Слово</th><th>Перевод</th><th>Изображение</th></tr></thead>
+    <tbody>
+    {% for card in cards %}
+        <tr>
+            <td>{{ card.word }}</td>
+            <td>{{ card.translation }}</td>
+            <td>{% if card.image %}<img src="{{ card.image.url }}" width="100">{% endif %}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
